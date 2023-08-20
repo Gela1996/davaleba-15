@@ -16,15 +16,16 @@
    //clear(listElement);
 
 //დავალება 3
+let list = document.getElementById('list');
 
-const ulElement = document.getElementById('ul');
-const newLi2 = document.createElement('li');
-newLi2.textContent = '2';
+let secondLi = document.createElement('li');
+secondLi.innerHTML = '2';
 
-const newLi3 = document.createElement('li');
-newLi3.textContent = '3';
+let thirdLi= document.createElement('li');
+thirdLi.innerHTML = '3';
 
-ulElement.insertBefore(newLi2, document.getElementById('two'));
+let fourthLi = documemnt.getElementById('two');
 
-ulElement.insertBefore(newLi3, newLi2.nextSibling);
+list.insertBefore(secondLi, fourthLi);
 
+list.insertBefore(thirdLi, fourthLi);
